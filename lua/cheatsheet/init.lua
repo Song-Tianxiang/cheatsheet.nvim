@@ -20,10 +20,11 @@ M.setup = function(args)
 end
 
 M.toggle = function()
+	vim.notify("fjaoiwefjaoi")
 	if vim.g.nvcheatsheet_displayed then
 		require("cheatsheet.utils").close_buffer()
 	else
-		require("cheatsheet." .. M.config.opt.theme)
+		require("cheatsheet." .. M.config.opt.theme)()
 	end
 end
 
