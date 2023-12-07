@@ -34,7 +34,6 @@ local ascii = {
 
 -- basically the draw function
 return function()
-	print("fjaieow")
 	vim.g.nv_previous_buf = vim.api.nvim_get_current_buf()
 	local buf = vim.api.nvim_create_buf(false, true)
 
